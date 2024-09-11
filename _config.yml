@@ -18,7 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Michael Ajao-Olarinoye
+title: Michael Ajao-Olarinoye 
+first_name: Michael
+middle_name: 
+last_name: Ajao-Olarinoye
 email: ajaoolarinoyemichael@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   My personal portfolio showcasing data science projects, machine learning research, and my educational contributions.
@@ -26,6 +29,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://michaelajao.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: michaelajao
 github_username:  michaelajao
+
+lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 # Build settings
 theme: minimal-mistakes-jekyll
@@ -56,3 +62,31 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+# -----------------------------------------------------------------------------
+# Theme
+# -----------------------------------------------------------------------------
+
+# repo color theme
+repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_trophies:
+  enabled: true
+  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
+  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+
+rss_icon: true
+
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
+
+navbar_fixed: true
+footer_fixed: true
+search_enabled: true
+socials_in_search: true
+bib_search: true
+
+# Dimensions
+max_width: 930px
+
+# TODO: add layout settings (single page vs. multi-page)
