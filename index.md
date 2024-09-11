@@ -4,7 +4,6 @@ title: Michael Ajao-Olarinoye
 permalink: /
 ---
 
-# Michael Ajao-Olarinoye
 ### Data Scientist | Machine Learning Engineer | Educator
 
 Welcome to my personal portfolio. I am passionate about leveraging data and machine learning to solve real-world problems, and I have over five years of experience in academia and industry. My work spans various domains, from **data science** and **AI-driven solutions** to **teaching and mentorship**.
