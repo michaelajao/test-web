@@ -1,151 +1,181 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# ------------------------------------------------------------------------------
+# Site Settings
+# ------------------------------------------------------------------------------
+# These settings customize the basic aspects of your website such as the title, 
+# description, and base URL. This information will be used throughout the site.
+title: "Michael Ajao-Olarinoye" # Your site's title.
+first_name: Michael # Your first name.
+last_name: Ajao-Olarinoye # Your last name.
+email: ajaoolarinoyemichael@gmail.com # Your email address.
+description: > # A brief description of your website that will appear in search engines and previews.
+  Personal portfolio showcasing data science projects, machine learning research, and educational contributions.
+baseurl: "" # Leave this empty unless using a custom subpath.
+url: "https://michaelajao.github.io" # The main URL for your site (use your custom domain if applicable).
+twitter_username: michaelajao # Twitter handle.
+github_username: michaelajao # GitHub handle.
 
-title: Michael Ajao-Olarinoye 
-first_name: Michael
-middle_name: 
-last_name: Ajao-Olarinoye
-email: ajaoolarinoyemichael@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  My personal portfolio showcasing data science projects, machine learning research, and my educational contributions.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://michaelajao.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: michaelajao
-github_username:  michaelajao
+# ------------------------------------------------------------------------------
+# SEO Optimization
+# ------------------------------------------------------------------------------
+# These settings are critical for search engine optimization (SEO), ensuring 
+# that your site is discoverable on search engines like Google.
+seo:
+  title: "Michael Ajao-Olarinoye | Data Scientist & Machine Learning Engineer"
+  description: "Personal portfolio showcasing data science projects, machine learning research, and educational contributions."
+  keywords: "Data Science, Machine Learning, Deep Learning, Educator, Research, AI"
+  canonical: true # Adds a canonical URL for better SEO practices.
+  twitter_card: summary_large_image # Sets the Twitter card format for preview.
+  twitter_site: "@michaelajao" # Twitter handle for social sharing.
+  og_image: "/assets/img/og-image.jpg" # Open Graph image (used when sharing links on social media).
 
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+# ------------------------------------------------------------------------------
+# Language and Icons
+# ------------------------------------------------------------------------------
+# Language setting and custom icon settings, including favicons.
+lang: en # The language code for your site (English).
+icon: ⚛️ # The emoji used as the favicon (use a custom image if needed).
 
-# Build settings
-theme: minimal-mistakes-jekyll
-# Plugins
+# ------------------------------------------------------------------------------
+# Build Settings
+# ------------------------------------------------------------------------------
+# Defines the Jekyll theme and important plugins to be used.
+theme: minimal-mistakes-jekyll # Jekyll theme used for your website.
+
+# Plugins are necessary for various features such as social media integration,
+# pagination, and performance optimization.
 plugins:
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-redirect-from
-  - jekyll-archives
-  - jekyll-email-protect
-  - jekyll-get-json
-  - jekyll-imagemagick
-  - jekyll-jupyter-notebook
-  - jekyll-link-attributes
-  - jekyll-minifier
-  - jekyll-paginate-v2
-  - jekyll-regex-replace
-  - jekyll/scholar
-  - jekyll-sitemap
-  - jekyll-tabs
-  - jekyll-toc
-  - jekyll-twitter-plugin
-  - jemoji
+  - jekyll-sitemap # Generates a sitemap for search engines.
+  - jekyll-gist # Allows embedding GitHub Gists.
+  - jekyll-feed # Generates an RSS feed for your blog.
+  - jekyll-redirect-from # Adds redirection capabilities.
+  - jekyll-archives # Organizes older blog posts into archives.
+  - jekyll-email-protect # Protects email addresses from spambots.
+  - jekyll-get-json # Fetches external JSON data.
+  - jekyll-imagemagick # Optimizes images.
+  - jekyll-jupyter-notebook # Allows embedding Jupyter Notebooks.
+  - jekyll-link-attributes # Adds attributes to links (e.g., "nofollow").
+  - jekyll-minifier # Minifies HTML/CSS/JS to improve performance.
+  - jekyll-paginate-v2 # Handles pagination of blog posts.
+  - jekyll-regex-replace # Enables regex-based text replacement.
+  - jekyll/scholar # Manages scholarly publications.
+  - jekyll-tabs # Enables tabbed content.
+  - jekyll-toc # Automatically generates tables of contents.
+  - jekyll-twitter-plugin # Adds Twitter embeds.
+  - jemoji # Adds emoji support to markdown.
 
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-# -----------------------------------------------------------------------------
-# Theme
-# -----------------------------------------------------------------------------
-
-# repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_trophies:
-  enabled: true
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
-
-rss_icon: true
-
-# -----------------------------------------------------------------------------
-# Layout
-# -----------------------------------------------------------------------------
-
-navbar_fixed: true
-footer_fixed: true
-search_enabled: true
-socials_in_search: true
-bib_search: true
-
-# Dimensions
-max_width: 930px
-
-# TODO: add layout settings (single page vs. multi-page)
-
-# -----------------------------------------------------------------------------
-# Jekyll settings
-# -----------------------------------------------------------------------------
-
-# Markdown and syntax highlight
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    css_class: "highlight"
-    span:
-      line_numbers: false
-    block:
-      line_numbers: false
-      start_line: 1
-
-# Includes & excludes
-include: ["_pages"]
+# ------------------------------------------------------------------------------
+# Excluded Files and Folders
+# ------------------------------------------------------------------------------
+# Files and folders that should be excluded from the site build process.
 exclude:
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
-  - docker-compose-slim.yml
   - FAQ.md
   - Gemfile
   - Gemfile.lock
   - INSTALL.md
   - LICENSE
-  - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
-  - purgecss.config.js
-  - README.md
-  - readme_preview/
-  - vendor
+  - vendor/
+
+# Files that should always be kept in the repository.
 keep_files:
   - CNAME
   - .nojekyll
   - .env
+
+# ------------------------------------------------------------------------------
+# Theme Settings
+# ------------------------------------------------------------------------------
+# Custom theme settings for visual customization, including GitHub themes for 
+# repositories.
+repo_theme_light: default # GitHub light theme for repository cards.
+repo_theme_dark: dark # GitHub dark theme for repository cards.
+repo_trophies:
+  enabled: true
+  theme_light: flat # Light theme for GitHub trophies.
+  theme_dark: gitdimmed # Dark theme for GitHub trophies.
+
+rss_icon: true # Displays an RSS feed icon.
+
+# ------------------------------------------------------------------------------
+# Layout and Responsiveness
+# ------------------------------------------------------------------------------
+# Configures layout settings for the website, including a fixed navigation bar 
+# and footer. Also adjusts responsiveness for different screen sizes.
+navbar_fixed: true # Keeps the navigation bar fixed at the top.
+footer_fixed: true # Keeps the footer fixed at the bottom.
+search_enabled: true # Enables site search functionality.
+socials_in_search: true # Includes social media links in search results.
+bib_search: true # Allows searching through publications.
+max_width: 100% # Ensures the layout is responsive across all devices.
+min_width: 320px # Ensures proper display on small mobile devices.
+
+# ------------------------------------------------------------------------------
+# Markdown and Syntax Highlighting
+# ------------------------------------------------------------------------------
+# Configures markdown processing and syntax highlighting for code snippets.
+markdown: kramdown
+highlighter: rouge # Code syntax highlighter.
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    block:
+      line_numbers: false # Disables line numbers for code blocks.
+      start_line: 1
+    span:
+      line_numbers: false # Disables line numbers for inline code.
+
+# ------------------------------------------------------------------------------
+# Social Media and Contact Links
+# ------------------------------------------------------------------------------
+# Settings for social media profiles and icons that will be displayed on the site.
+social:
+  twitter: "michaelajao" # Twitter handle.
+  github: "michaelajao" # GitHub profile.
+  linkedin: "michael-ajao" # LinkedIn profile.
+  scholar: "https://scholar.google.com/citations?user=XXXXX" # Google Scholar profile link.
+
+social_icons:
+  enabled: true
+  twitter: true
+  github: true
+  linkedin: true
+  scholar: true
+
+# ------------------------------------------------------------------------------
+# Pagination
+# ------------------------------------------------------------------------------
+# Settings to handle pagination for blog posts and projects.
+paginate: 5 # Number of posts per page.
+paginate_path: "/page:num/" # URL format for pagination.
+
+# ------------------------------------------------------------------------------
+# Google Analytics
+# ------------------------------------------------------------------------------
+# Adds Google Analytics for tracking website traffic.
+google_analytics: "UA-XXXXXXXXX-X" # Your Google Analytics tracking ID.
+
+# ------------------------------------------------------------------------------
+# Footer Settings
+# ------------------------------------------------------------------------------
+# Configures the footer content with contact information and social links.
+footer:
+  content: |
+    <p>&copy; 2024 Michael Ajao-Olarinoye. All Rights Reserved.</p>
+    <p>Email: ajaoolarinoyemichael@gmail.com | GitHub: <a href='https://github.com/michaelajao'>michaelajao</a></p>
+    <p>Coventry, UK</p>
+
+# ------------------------------------------------------------------------------
+# Performance Optimization
+# ------------------------------------------------------------------------------
+# Settings to improve site performance by optimizing and compressing assets.
+assets:
+  compress: true # Enable asset compression.
+  js_compressor: terser # JavaScript compression.
+  css_compressor: cssnano # CSS compression.
