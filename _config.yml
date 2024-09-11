@@ -251,7 +251,7 @@ enable_publication_badges:
 # Responsive Images and Performance Optimization
 # ----------------------------------------------------------------------
 imagemagick:
-  enabled: true # Enable responsive images
+  enabled: false # Enable responsive images
   widths:
     - 480
     - 800
