@@ -1,218 +1,279 @@
-# ------------------------------------------------------------------------------
-# Site Settings
-# ------------------------------------------------------------------------------
-# These settings customize the basic aspects of your website such as the title, 
-# description, and base URL. This information will be used throughout the site.
-title: "Michael Ajao-Olarinoye" # Your site's title.
-first_name: Michael # Your first name.
-last_name: Ajao-Olarinoye # Your last name.
-email: ajaoolarinoyemichael@gmail.com # Your email address.
-description: > # A brief description of your website that will appear in search engines and previews.
+# ----------------------------------------------------------------------
+# Site settings
+# ----------------------------------------------------------------------
+title: "Michael Ajao-Olarinoye" # Title for the site, shown in browser title bar
+first_name: Michael
+middle_name: 
+last_name: Ajao-Olarinoye
+email: ajaoolarinoyemichael@gmail.com # Your email address
+description: > # Description for your site (for SEO)
   Personal portfolio showcasing data science projects, machine learning research, and educational contributions.
-baseurl: "" # Leave this empty unless using a custom subpath.
-url: "https://michaelajao.github.io" # The main URL for your site (use your custom domain if applicable).
-twitter_username: michaelajao # Twitter handle.
-github_username: michaelajao # GitHub handle.
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+keywords: "Data Science, Machine Learning, AI, Educator, Academic Portfolio, Research" # Keywords for SEO optimization
+lang: en # Language of the site
+icon: ⚛️ # Favicon for your site (can also be a path to an image)
 
-# ------------------------------------------------------------------------------
-# SEO Optimization
-# ------------------------------------------------------------------------------
-# These settings are critical for search engine optimization (SEO), ensuring 
-# that your site is discoverable on search engines like Google.
-seo:
-  title: "Michael Ajao-Olarinoye | Data Scientist & Machine Learning Engineer"
-  description: "Personal portfolio showcasing data science projects, machine learning research, and educational contributions."
-  keywords: "Data Science, Machine Learning, Deep Learning, Educator, Research, AI"
-  canonical: true # Adds a canonical URL for better SEO practices.
-  twitter_card: summary_large_image # Sets the Twitter card format for preview.
-  twitter_site: "@michaelajao" # Twitter handle for social sharing.
-  og_image: "/assets/img/og-image.jpg" # Open Graph image (used when sharing links on social media).
+# URL settings
+url: "https://michaelajao.github.io" # The URL for the live site
+baseurl: "" # Keep blank unless you have a subdirectory for your site
+last_updated: true # Set to true to show the last updated date in the footer
+impressum_path: # GDPR impressum link
+back_to_top: true # Back to top button
 
-# ------------------------------------------------------------------------------
-# Language and Icons
-# ------------------------------------------------------------------------------
-# Language setting and custom icon settings, including favicons.
-lang: en # The language code for your site (English).
-icon: ⚛️ # The emoji used as the favicon (use a custom image if needed).
-
-
-
-# -----------------------------------------------------------------------------
-# Theme
-# -----------------------------------------------------------------------------
-
-# repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+# ----------------------------------------------------------------------
+# Theme Settings
+# ----------------------------------------------------------------------
+# GitHub repository themes for personal projects display
+repo_theme_light: default # GitHub light theme for repositories
+repo_theme_dark: dark # GitHub dark theme for repositories
 repo_trophies:
   enabled: true
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+  theme_light: flat # Trophy style for light theme
+  theme_dark: gitdimmed # Trophy style for dark theme
 
-# -----------------------------------------------------------------------------
 # RSS Feed
-# -----------------------------------------------------------------------------
-# will use title and url fields
-# Take a look to https://github.com/jekyll/jekyll-feed for more customization
+rss_icon: true # RSS feed for your blog
 
-rss_icon: true
+# ----------------------------------------------------------------------
+# Layout and Responsiveness
+# ----------------------------------------------------------------------
+navbar_fixed: true # Keep navbar fixed
+footer_fixed: true # Keep footer fixed
+search_enabled: true # Enable search
+socials_in_search: true # Show social links in search
+bib_search: true # Enable publication search
+max_width: 100% # Ensure the site is responsive across devices
+min_width: 320px # Minimum width for smaller devices (mobile)
 
-# -----------------------------------------------------------------------------
-# Layout
-# -----------------------------------------------------------------------------
+# ----------------------------------------------------------------------
+# Open Graph and Schema.org for Social Media Previews
+# ----------------------------------------------------------------------
+serve_og_meta: true # Open Graph meta tags for social sharing
+serve_schema_org: true # Schema.org metadata for structured data
+og_image: /assets/img/og-image.jpg # Open Graph image for previews
 
-navbar_fixed: true
-footer_fixed: true
-search_enabled: true
-socials_in_search: true
-bib_search: true
+# ----------------------------------------------------------------------
+# Social Integration
+# ----------------------------------------------------------------------
+# Social media profiles
+github_username: michaelajao
+linkedin_username: michael-ajao
+twitter_username: michaelajao
+scholar_userid: qc6CJjYAAAAJ # Google Scholar ID
+research_gate_profile: # Add your ResearchGate link here
+orcid_id: # Add your ORCID ID if applicable
+youtube_id: # Add your YouTube channel ID if needed
 
-# Dimensions
-max_width: 930px
+contact_note: >
+  Feel free to reach out to me via any of the platforms below!
 
-# TODO: add layout settings (single page vs. multi-page)
+# ----------------------------------------------------------------------
+# Analytics and Search Engine Verification
+# ----------------------------------------------------------------------
+google_analytics: G-XXXXXXXXXX # Google Analytics tracking ID
+google_site_verification: XXXXXXXXXXXXXXXXXX # Verification for Google Search Console
+bing_site_verification: XXXXXXXXXXXXXXXXXX # Verification for Bing Webmaster Tools
 
-# ------------------------------------------------------------------------------
-# Build Settings
-# ------------------------------------------------------------------------------
-# Defines the Jekyll theme and important plugins to be used.
-theme: minimal-mistakes-jekyll # Jekyll theme used for your website.
+# ----------------------------------------------------------------------
+# Blog Settings
+# ----------------------------------------------------------------------
+blog_name: Michael's Blog # Blog name to be displayed
+blog_description: Posts on data science, machine learning, and research.
+permalink: /blog/:year/:title/ # URL format for blog posts
 
-# Plugins are necessary for various features such as social media integration,
-# pagination, and performance optimization.
-plugins:
-  - jekyll-sitemap # Generates a sitemap for search engines.
-  - jekyll-gist # Allows embedding GitHub Gists.
-  - jekyll-feed # Generates an RSS feed for your blog.
-  - jekyll-redirect-from # Adds redirection capabilities.
-  - jekyll-archives # Organizes older blog posts into archives.
-  - jekyll-email-protect # Protects email addresses from spambots.
-  - jekyll-get-json # Fetches external JSON data.
-  - jekyll-imagemagick # Optimizes images.
-  - jekyll-jupyter-notebook # Allows embedding Jupyter Notebooks.
-  - jekyll-link-attributes # Adds attributes to links (e.g., "nofollow").
-  - jekyll-minifier # Minifies HTML/CSS/JS to improve performance.
-  - jekyll-paginate-v2 # Handles pagination of blog posts.
-  - jekyll-regex-replace # Enables regex-based text replacement.
-  - jekyll/scholar # Manages scholarly publications.
-  - jekyll-tabs # Enables tabbed content.
-  - jekyll-toc # Automatically generates tables of contents.
-  - jekyll-twitter-plugin # Adds Twitter embeds.
-  - jemoji # Adds emoji support to markdown.
+# Pagination settings
+pagination:
+  enabled: true
+  per_page: 5 # Number of posts per page
 
-# ------------------------------------------------------------------------------
-# Excluded Files and Folders
-# ------------------------------------------------------------------------------
-# Files and folders that should be excluded from the site build process.
+# Enable related blog posts for better user engagement
+related_blog_posts:
+  enabled: true
+  max_related: 5 # Show up to 5 related posts
+
+# Giscus comments for blog posts (if using GitHub Discussions for comments)
+giscus:
+  repo: michaelajao/michaelajao.github.io
+  repo_id: XXXXXXXXXX
+  category: Comments
+  category_id: XXXXXXXXXX
+  mapping: title
+  strict: 1
+  reactions_enabled: 1
+  input_position: bottom
+  theme: preferred_color_scheme
+  emit_metadata: 0
+  lang: en
+
+# ----------------------------------------------------------------------
+# Newsletter Subscription
+# ----------------------------------------------------------------------
+newsletter:
+  enabled: false
+  endpoint: # Your email subscription endpoint if applicable
+
+# ----------------------------------------------------------------------
+# Projects and Collections
+# ----------------------------------------------------------------------
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /:collection/:title/
+  projects:
+    output: true
+    permalink: /:collection/:title/
+
+# Announcements section
+announcements:
+  enabled: true
+  scrollable: true
+  limit: 5 # Show up to 5 announcements
+
+# Latest posts section
+latest_posts:
+  enabled: true
+  scrollable: true
+  limit: 3 # Show up to 3 recent posts
+
+# ----------------------------------------------------------------------
+# Jekyll Settings
+# ----------------------------------------------------------------------
+# Markdown processing and code highlighting settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    block:
+      line_numbers: false
+      start_line: 1
+    span:
+      line_numbers: false
+
+# Exclude files and folders from the site build
+# Includes & excludes
+include: ["_pages"]
 exclude:
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
+  - docker-compose-slim.yml
   - FAQ.md
   - Gemfile
   - Gemfile.lock
   - INSTALL.md
   - LICENSE
+  - lighthouse_results/
   - package.json
   - package-lock.json
-  - vendor/
+  - purgecss.config.js
+  - README.md
+  - readme_preview/
+  - vendor
 
-# Files that should always be kept in the repository.
 keep_files:
   - CNAME
   - .nojekyll
-  - .env
 
-# ------------------------------------------------------------------------------
-# Theme Settings
-# ------------------------------------------------------------------------------
-# Custom theme settings for visual customization, including GitHub themes for 
-# repositories.
-repo_theme_light: default # GitHub light theme for repository cards.
-repo_theme_dark: dark # GitHub dark theme for repository cards.
-repo_trophies:
-  enabled: true
-  theme_light: flat # Light theme for GitHub trophies.
-  theme_dark: gitdimmed # Dark theme for GitHub trophies.
+# Plugins for extended functionality
+plugins:
+  - jekyll-archives
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-regex-replace
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jemoji
 
-rss_icon: true # Displays an RSS feed icon.
+# Sitemap settings
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
 
-# ------------------------------------------------------------------------------
-# Layout and Responsiveness
-# ------------------------------------------------------------------------------
-# Configures layout settings for the website, including a fixed navigation bar 
-# and footer. Also adjusts responsiveness for different screen sizes.
-navbar_fixed: true # Keeps the navigation bar fixed at the top.
-footer_fixed: true # Keeps the footer fixed at the bottom.
-search_enabled: true # Enables site search functionality.
-socials_in_search: true # Includes social media links in search results.
-bib_search: true # Allows searching through publications.
-max_width: 100% # Ensures the layout is responsive across all devices.
-min_width: 320px # Ensures proper display on small mobile devices.
+sass:
+  style: compressed
 
-# ------------------------------------------------------------------------------
-# Markdown and Syntax Highlighting
-# ------------------------------------------------------------------------------
-# Configures markdown processing and syntax highlighting for code snippets.
-markdown: kramdown
-highlighter: rouge # Code syntax highlighter.
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    css_class: "highlight"
-    block:
-      line_numbers: false # Disables line numbers for code blocks.
-      start_line: 1
-    span:
-      line_numbers: false # Disables line numbers for inline code.
 
-# ------------------------------------------------------------------------------
-# Social Media and Contact Links
-# ------------------------------------------------------------------------------
-# Settings for social media profiles and icons that will be displayed on the site.
-social:
-  twitter: "michaelajao" # Twitter handle.
-  github: "michaelajao" # GitHub profile.
-  linkedin: "michael-ajao" # LinkedIn profile.
-  scholar: "https://scholar.google.com/citations?user=XXXXX" # Google Scholar profile link.
+# ----------------------------------------------------------------------
+# Additional Optimization and Features
+# ----------------------------------------------------------------------
+jekyll-minifier:
+  exclude: ["robots.txt", "assets/js/search/*.js"]
+  uglifier_args:
+    harmony: true
 
-social_icons:
-  enabled: true
-  twitter: true
-  github: true
-  linkedin: true
-  scholar: true
+# Archives and tags
+jekyll-archives:
+  enabled: [year, tags, categories] # Enable archives by year, tags, and categories
+  layouts:
+    year: archive-year
+    tag: archive-tag
+    category: archive-category
+  permalinks:
+    year: "/blog/:year/"
+    tag: "/blog/tag/:name/"
+    category: "/blog/category/:name/"
 
-# ------------------------------------------------------------------------------
-# Pagination
-# ------------------------------------------------------------------------------
-# Settings to handle pagination for blog posts and projects.
-paginate: 5 # Number of posts per page.
-paginate_path: "/page:num/" # URL format for pagination.
+# Scholar plugin settings for managing academic publications
+scholar:
+  last_name: [Ajao-Olarinoye]
+  first_name: [Michael]
+  style: apa
+  source: /_bibliography/
+  bibliography: papers.bib
+  details_dir: bibliography
+  details_link: Details
+  query: "@*"
+  group_by: year
+  group_order: descending
 
-# ------------------------------------------------------------------------------
-# Google Analytics
-# ------------------------------------------------------------------------------
-# Adds Google Analytics for tracking website traffic.
-google_analytics: "UA-XXXXXXXXX-X" # Your Google Analytics tracking ID.
+# Enable publication badges (Altmetric, Google Scholar, etc.)
+enable_publication_badges:
+  altmetric: true
+  google_scholar: true
 
-# ------------------------------------------------------------------------------
-# Footer Settings
-# ------------------------------------------------------------------------------
-# Configures the footer content with contact information and social links.
+# ----------------------------------------------------------------------
+# Responsive Images and Performance Optimization
+# ----------------------------------------------------------------------
+imagemagick:
+  enabled: true # Enable responsive images
+  widths:
+    - 480
+    - 800
+    - 1400
+  input_directories:
+    - assets/img/
+  output_formats:
+    webp: "-quality 85"
+
+lazy_loading_images: true # Enable lazy loading for images
+
+# Enable dark mode, medium zoom on images, etc.
+enable_darkmode: true
+enable_medium_zoom: true
+enable_progressbar: true # Progress bar at the top during scrolling
+enable_masonry: true # Auto-arrange project cards
+
+# ----------------------------------------------------------------------
+# Footer settings
+# ----------------------------------------------------------------------
 footer:
   content: |
     <p>&copy; 2024 Michael Ajao-Olarinoye. All Rights Reserved.</p>
-    <p>Email: ajaoolarinoyemichael@gmail.com | GitHub: <a href='https://github.com/michaelajao'>michaelajao</a></p>
+    <p>Email: <a href="mailto:ajaoolarinoyemichael@gmail.com">ajaoolarinoyemichael@gmail.com</a> | GitHub: <a href='https://github.com/michaelajao'>michaelajao</a></p>
     <p>Coventry, UK</p>
-
-# ------------------------------------------------------------------------------
-# Performance Optimization
-# ------------------------------------------------------------------------------
-# Settings to improve site performance by optimizing and compressing assets.
-assets:
-  compress: true # Enable asset compression.
-  js_compressor: terser # JavaScript compression.
-  css_compressor: cssnano # CSS compression.
