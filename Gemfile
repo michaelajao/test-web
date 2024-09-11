@@ -40,7 +40,6 @@ group :jekyll_plugins do
   gem 'jekyll-twitter-plugin'
   gem 'jemoji'
   gem 'observer'
-  gem 'fiddle'
   gem 'ostruct'
   gem 'unicode_utils'
   gem "webrick", "~> 1.8"
