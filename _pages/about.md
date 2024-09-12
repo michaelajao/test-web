@@ -1,7 +1,7 @@
 ---
 layout: about
 title: About Me
-permalink: /
+permalink: /about/
 subtitle: Data Scientist, Machine Learning Engineer, and Educator
 
 profile:
