@@ -111,16 +111,16 @@ related_blog_posts:
 # Giscus comments (Optional)
 # -----------------------------------------------------------------------------
 
-giscus:
-  repo: michaelajao/michaelajao.github.io
-  repo_id: # Leave empty unless you have the repo ID
-  category: Comments
-  category_id: # Leave empty unless you have the category ID
-  mapping: title
-  reactions_enabled: 1
-  input_position: bottom
-  theme: preferred_color_scheme
-  lang: en
+# giscus:
+#   repo: michaelajao/michaelajao.github.io
+#   repo_id: # Leave empty unless you have the repo ID
+#   category: Comments
+#   category_id: # Leave empty unless you have the category ID
+#   mapping: title
+#   reactions_enabled: 1
+#   input_position: bottom
+#   theme: preferred_color_scheme
+#   lang: en
 
 # -----------------------------------------------------------------------------
 # Disqus comments (DEPRECATED)
@@ -197,8 +197,10 @@ exclude:
   - bin/
   - Gemfile
   - Gemfile.lock
-  - package.json
-  - package-lock.json
+  - vendor/
+  - .jekyll-cache
+
+# Plug-ins
 keep_files:
   - CNAME
   - .nojekyll
@@ -214,7 +216,6 @@ keep_files:
 
 
 plugins:
-  - minimal-mistakes-jekyll
   - jekyll-archives
   - jekyll-email-protect
   - jekyll-feed
@@ -226,7 +227,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate-v2
   - jekyll-regex-replace
-  - jekyll/scholar
   - jekyll-sitemap
   - jekyll-tabs
   - jekyll-toc
@@ -251,18 +251,18 @@ enable_medium_zoom: true # Enables image zoom feature (like medium.com)
 # Library versions
 # -----------------------------------------------------------------------------
 
-third_party_libraries:
-  download: false
-  bootstrap-table:
-    version: "1.22.4"
-  chartjs:
-    version: "4.4.1"
-  d3:
-    version: "7.8.5"
-  echarts:
-    version: "5.5.0"
-  jquery:
-    version: "3.6.0"
+# third_party_libraries:
+#   download: false
+#   bootstrap-table:
+#     version: "1.22.4"
+#   chartjs:
+#     version: "4.4.1"
+#   d3:
+#     version: "7.8.5"
+#   echarts:
+#     version: "5.5.0"
+#   jquery:
+#     version: "3.6.0"
 
 # -----------------------------------------------------------------------------
 # Responsive WebP Images
