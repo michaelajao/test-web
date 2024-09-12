@@ -20,7 +20,7 @@ layout: default
           {% assign profile_image_path = 'assets/img/' | append: page.profile.image %}
           {% assign profile_image_class = page.profile.image_circular ? 'img-fluid z-depth-1 rounded-circle' : 'img-fluid z-depth-1 rounded' %}
           
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %} <!-- spell-check-ignore-line -->
           
           {%
             include figure.liquid 
@@ -39,7 +39,7 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix">{{ content }}</div> <!-- spell-check-ignore-line -->
 
     <!-- News Section -->
     {% if page.news and site.announcements.enabled %}
@@ -53,12 +53,7 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected Publications -->
-    {% if page.selected_papers %}
-      <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a></h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
+    
     <!-- Social Media Section -->
     {% if page.social %}
       <div class="social">
