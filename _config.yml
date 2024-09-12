@@ -226,7 +226,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate-v2
   - jekyll-regex-replace
-  - jekyll/scholar
   - jekyll-sitemap
   - jekyll-tabs
   - jekyll-toc
@@ -313,33 +312,33 @@ display_categories: ["external-services"] # these categories will be displayed o
 # Scholar configuration (for academic citations and publications)
 # -----------------------------------------------------------------------------
 
-scholar:
-  last_name: [Ajao]
-  first_name: [Michael]
-  style: apa
-  locale: en
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  replace_strings: true
-  join_strings: true
+# scholar:
+#   last_name: [Ajao]
+#   first_name: [Michael]
+#   style: apa
+#   locale: en
+#   source: /_bibliography/
+#   bibliography: papers.bib
+#   bibliography_template: bib
+#   replace_strings: true
+#   join_strings: true
 
-  max_author_limit: 3
-  enable_publication_thumbnails: true
-  enable_publication_badges:
-    altmetric: true
-    dimensions: true
-    google_scholar: true
+#   max_author_limit: 3
+#   enable_publication_thumbnails: true
+#   enable_publication_badges:
+#     altmetric: true
+#     dimensions: true
+#     google_scholar: true
 
-  bibtex_filters: [latex, smallcaps, superscript]
+#   bibtex_filters: [latex, smallcaps, superscript]
 
 
-  details_dir: bibliography
-  details_link: Details
+#   details_dir: bibliography
+#   details_link: Details
 
-  query: "@*"
-  group_by: year
-  group_order: descending
+#   query: "@*"
+#   group_by: year
+#   group_order: descending
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
 # -----------------------------------------------------------------------------
