@@ -4,8 +4,9 @@
 @charset "utf-8";
 
 // Dimensions
-$max-content-width: {{ site.max_width }};
+$max-content-width: {{ site.max_width | default: "100%" }};
 
+// Import partials (ensure these files exist in the correct directories)
 @import
   "variables",
   "themes",
@@ -19,7 +20,6 @@ $max-content-width: {{ site.max_width }};
   "font-awesome/brands",
   "font-awesome/solid",
   "font-awesome/regular",
-  "tabler-icons/tabler-icons.scss",
-  "tabler-icons/tabler-icons-filled.scss",
-  "tabler-icons/tabler-icons-outline.scss"
-;
+  "tabler-icons/tabler-icons",
+  "tabler-icons/tabler-icons-filled",
+  "tabler-icons/tabler-icons-outline";
