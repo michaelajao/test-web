@@ -1,39 +1,44 @@
 ---
 layout: about
-title: About Me
-permalink: /about/
-subtitle: Data Scientist, Machine Learning Engineer, and Educator
+title: About Michael Ajao-Olarinoye
+permalink: /
+subtitle: <a href='#'>Data Scientist | Machine Learning Expert | AI Enthusiast</a>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # The profile image is now circular for a clean, modern look
+  image_circular: true # makes the profile image circular
   more_info: >
-    <p>Email: <a href="mailto:ajaoolarinoyemichael@gmail.com">ajaoolarinoyemichael@gmail.com</a></p>
-    <p>Office: 555 Your Office Number</p>
-    <p>Location: 123 Your Address Street, Your City, State 12345</p>
-    <p>Motto: "Empowering the future with data-driven solutions"</p>
+    <p>+44 (0)7955797785</p>
+    <p>108, Shakespeare Street</p>
+    <p>Coventry, CV2 4NG, United Kingdom</p>
 
-news: true # Includes a list of news items
-selected_papers: true # Includes a list of selected papers
-social: true # Includes social icons at the bottom of the page
+news: true # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 ---
 
-## About Me
+Hi, I'm **Michael Ajao-Olarinoye**, a Data Scientist and Machine Learning expert with over five years of experience in both academia and industry. Currently, I'm pursuing a PhD in Computational Science and Mathematical Modelling at Coventry University, where I specialize in developing predictive models for **resource allocation during pandemics**.
 
-I am Michael Ajao-Olarinoye, a passionate Data Scientist, Machine Learning Engineer, and Educator. With over five years of experience in academia and industry, I specialize in leveraging data to solve real-world problems through innovative AI-driven solutions. My work spans across domains, focusing on teaching, mentorship, and research in advanced machine learning techniques.
+I am passionate about **Artificial Intelligence**, **Big Data**, and **teaching**. In addition to my research, I work as a Graduate Teaching Assistant, helping students develop a deeper understanding of **Machine Learning** and **AI**. 
 
-Currently, I am pursuing a PhD in Computational Science and Mathematical Modelling at Coventry University, where my research focuses on **optimizing resource allocation during pandemics** using advanced AI techniques. My professional background includes expertise in:
+Some of my key achievements include:
+- Developing predictive and prescriptive models for resource allocation in pandemic scenarios.
+- Publishing research in **top-tier conferences** like the IEEE International Conference on Machine Learning and Applications (ICMLA).
+- Leading **AI literacy initiatives** at the African Institute for Artificial Intelligence (AIAI).
 
-- Machine Learning and Deep Learning
-- Data Science and Big Data Analytics
-- Computational Modelling for public health
-- Time Series Analysis
+When I’m not coding or mentoring students, I enjoy contributing to open-source projects and exploring the intersection of AI and public health. I am also deeply committed to **community outreach**, teaching web development to underrepresented communities through initiatives like CodeYourFuture.
 
-## Affiliations
-- Graduate Teaching Assistant, Coventry University
-- Researcher, Center for Computational Science and Mathematical Modelling
+### Affiliations
+- **Coventry University** - PhD Candidate, Computational Science
+- **African Institute for Artificial Intelligence (AIAI)** - Head of AI Literacy
+- **CodeYourFuture** - Teaching Assistant
 
-## Get in Touch
-Feel free to reach out via email or connect with me on [LinkedIn](https://www.linkedin.com/in/michael-ajao).
+Feel free to check out my [projects](https://github.com/michaelajao) or connect with me via my social media links below.
 
+### Contact Information
+- Email: [ajaoolarinoyemichael@gmail.com](mailto:ajaoolarinoyemichael@gmail.com)
+- GitHub: [michaelajao](https://github.com/michaelajao)
+- LinkedIn: [Michael Ajao-Olarinoye](https://www.linkedin.com/in/michael-ajao)
+
+You can also check out my [publications page](/publications/) to see my latest research.
