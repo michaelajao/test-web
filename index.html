@@ -1,98 +1,56 @@
 ---
-layout: home
-title: "Welcome to Michael's Portfolio"
-permalink: /
+layout: default
+title: "Welcome to Michael Ajao's Portfolio"
 ---
 
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="keywords" content="{{ site.keywords }}">
-    <meta name="author" content="{{ site.title }}">
-    <title>{{ site.title }} - {{ site.description }}</title>
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="icon" href="{{ site.icon | default: '/favicon.ico' }}">
 </head>
 
-<body class="layout-home">
+<body>
     <header>
         <nav>
-            <a href="{{ site.baseurl }}/">Home</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-            <a href="{{ site.baseurl }}/projects">Projects</a>
-            <a href="{{ site.baseurl }}/blog">Blog</a>
-            <a href="{{ site.baseurl }}/cv">CV</a>
-            <a href="{{ site.baseurl }}/contact">Contact</a>
+            <ul>
+                <li><a href="{{ site.baseurl }}/about">About</a></li>
+                <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
+                <li><a href="{{ site.baseurl }}/cv">CV</a></li>
+                <li><a href="{{ site.baseurl }}/publications">Publications</a></li>
+                <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+            </ul>
         </nav>
+        <h1>{{ page.title }}</h1>
+        <p>Welcome to the personal portfolio website of Michael Ajao-Olarinoye, a Data Scientist, Machine Learning
+            Engineer, and Educator.</p>
     </header>
 
-    <main class="homepage">
-        <section class="intro">
-            <div class="intro-text">
-                <h1>{{ site.first_name }} {{ site.last_name }}</h1>
-                <p>{{ site.description }}</p>
-                <p><a href="{{ site.baseurl }}/about" class="btn">Learn more about me</a></p>
-            </div>
-            <div class="intro-image">
-                <img src="{{ '/assets/img/' | append: page.profile.image }}" alt="Profile Picture">
-            </div>
-        </section>
+    <section>
+        <h2>Featured Projects</h2>
+        <ul>
+            <!-- Example project links -->
+            <li><a href="{{ site.baseurl }}/projects/project-1">Project 1</a></li>
+            <li><a href="{{ site.baseurl }}/projects/project-2">Project 2</a></li>
+            <li><a href="{{ site.baseurl }}/projects/project-3">Project 3</a></li>
+        </ul>
+    </section>
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Data Science</li>
-                <li>Machine Learning</li>
-                <li>Web Development</li>
-                <li>Mobile Development</li>
-                <li>AI Research</li>
-            </ul>
-        </section>
-
-        <section class="featured-projects">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                {% for project in site.projects limit:3 %}
-                <div class="project-card">
-                    <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
-                    <p>{{ project.description }}</p>
-                </div>
-                {% endfor %}
-            </div>
-            <p><a href="{{ site.baseurl }}/projects" class="btn">View all projects</a></p>
-        </section>
-
-        <section class="latest-blog">
-            <h2>Latest Blog Posts</h2>
-            <ul>
-                {% for post in site.posts limit: 3 %}
-                <li>
-                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-                    <p>{{ post.excerpt }}</p>
-                    <small>{{ post.date | date: "%B %d, %Y" }}</small>
-                </li>
-                {% endfor %}
-            </ul>
-            <p><a href="{{ site.baseurl }}/blog" class="btn">Read all posts</a></p>
-        </section>
-
-        <section class="contact">
-            <h2>Get in Touch</h2>
-            <p>If you’d like to collaborate or just have a chat, feel free to <a href="{{ site.baseurl }}/contact">reach
-                    out</a>.</p>
-        </section>
-    </main>
+    <section>
+        <h2>Latest Blog Posts</h2>
+        <ul>
+            {% for post in site.posts limit:5 %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
 
     <footer>
-        <p>{{ site.footer_text }}</p>
-        <div class="social-links">
-            <a href="https://github.com/{{ site.github_username }}">GitHub</a>
-            <a href="https://linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
-        </div>
+        <p>&copy; {{ site.time | date: "%Y" }} Michael Ajao. All rights reserved.</p>
     </footer>
 </body>
 
