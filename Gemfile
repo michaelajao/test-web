@@ -41,6 +41,7 @@ group :jekyll_plugins do
   gem 'jekyll-toc'
   gem 'jekyll-twitter-plugin'
   gem 'jemoji'
+  gem 'faraday-retry'
   gem 'observer'
   gem 'ostruct'
   gem 'unicode_utils'
