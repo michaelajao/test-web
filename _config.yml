@@ -319,6 +319,8 @@ defaults:
     values:
       sitemap: false
 
+sass:
+  style: compressed
 # -----------------------------------------------------------------------------
 # Get external JSON data
 # -----------------------------------------------------------------------------
@@ -328,8 +330,3 @@ jekyll_get_json:
     json: assets/json/resume.json # JSON for resume
 
 
-header_pages:
-  - index.md
-  - projects.md
-  - experience.md
-  - skills.md
