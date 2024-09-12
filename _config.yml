@@ -26,6 +26,8 @@ back_to_top: true # Enable the back-to-top button
 # Theme
 # -----------------------------------------------------------------------------
 
+
+
 repo_theme_light: default
 repo_theme_dark: dark
 repo_trophies:
@@ -185,6 +187,7 @@ plugins:
   - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
+  - jekyll-seo-tag
   - jekyll-paginate-v2
   - jekyll-regex-replace
   - jekyll/scholar
@@ -193,7 +196,9 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
-
+# Theme and Plugins
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: default # skin options: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
