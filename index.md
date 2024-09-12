@@ -61,4 +61,6 @@ Follow my latest work and updates on my [Blog](/blog).
 
 ## Social Media Links
 
-{% include social.html %}
+- [LinkedIn](https://www.linkedin.com/in/michael-ajao)
+- [Twitter](https://twitter.com/michaelajao)
+- [GitHub](https://github.com/michaelajao)
