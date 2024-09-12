@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="about-page">
+  <div class="profile-section">
+    <img src="{{ '/assets/img/' | append: page.profile.image }}" alt="Profile Picture" class="{% if page.profile.image_circular %}circular{% endif %}">
+    <div class="profile-info">
+      {{ page.profile.more_info }}
+    </div>
+  </div>
+  
+  <section class="bio">
+    <h2>About Me</h2>
+    <p>{{ content }}</p>
+  </section>
+
+  {% if page.social %}
+  <section class="social-icons">
+    <h3>Connect with me</h3>
+    <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+    <a href="https://linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
+  </section>
+  {% endif %}
+</div>

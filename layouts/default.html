@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="keywords" content="{{ site.keywords }}">
+  <meta name="author" content="{{ site.title }}">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="icon" href="{{ site.icon | default: '/favicon.ico' }}">
+</head>
+
+<body class="layout-default">
+  <header>
+    <nav>
+      <a href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.baseurl }}/about">About</a>
+      <a href="{{ site.baseurl }}/projects">Projects</a>
+      <a href="{{ site.baseurl }}/blog">Blog</a>
+      <a href="{{ site.baseurl }}/cv">CV</a>
+      <a href="{{ site.baseurl }}/contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>{{ site.footer_text }}</p>
+    {% if site.social %}
+    <div class="social-links">
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="https://linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
+    </div>
+    {% endif %}
+  </footer>
+</body>
+</html>
