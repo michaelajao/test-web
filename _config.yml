@@ -22,6 +22,18 @@ last_updated: true # Display last updated in the footer
 impressum_path: # Leave this blank unless you need an impressum link for GDPR compliance
 back_to_top: true # Enable the back-to-top button
 
+
+# SEO Settings
+seo:
+  title: "Michael Ajao-Olarinoye | Data Scientist & Machine Learning Engineer"
+  description: "Personal portfolio website of Michael Ajao-Olarinoye, showcasing data science projects, machine learning research, and educational contributions."
+  keywords: "Data Science, Machine Learning, Deep Learning, Educator, Research, AI"
+  canonical: true
+  twitter_card: summary_large_image
+  twitter_site: "@michaelajao"
+  og_image: "/assets/img/og-image.jpg" # Use a custom Open Graph image for better link sharing.
+
+
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
