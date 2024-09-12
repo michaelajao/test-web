@@ -37,7 +37,9 @@ seo:
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
-
+# Theme and Plugins
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: default # skin options: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 
 repo_theme_light: default
@@ -124,19 +126,19 @@ giscus:
 # Disqus comments (DEPRECATED)
 # -----------------------------------------------------------------------------
 
-disqus_shortname: al-folio # Set this if you plan to use Disqus comments
+# disqus_shortname: al-folio # Set this if you plan to use Disqus comments
 
 # -----------------------------------------------------------------------------
 # External sources
 # -----------------------------------------------------------------------------
 
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/feed/@michaelajao
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+# external_sources:
+#   - name: medium.com
+#     rss_url: https://medium.com/feed/@michaelajao
+#   - name: Google Blog
+#     posts:
+#       - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+#         published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter (Optional)
@@ -191,6 +193,7 @@ kramdown:
 # -----------------------------------------------------------------------------
 
 plugins:
+  - minimal-mistakes-jekyll
   - jekyll-archives
   - jekyll-email-protect
   - jekyll-feed
@@ -208,9 +211,7 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
-# Theme and Plugins
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: default # skin options: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
 # -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
