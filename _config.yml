@@ -226,7 +226,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate-v2
   - jekyll-regex-replace
-  - jekyll-scholar
+  - jekyll/scholar
   - jekyll-sitemap
   - jekyll-tabs
   - jekyll-toc
@@ -267,13 +267,23 @@ third_party_libraries:
 # -----------------------------------------------------------------------------
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
-
 imagemagick:
-  enabled: false
+  enabled: false # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800
     - 1400
+  input_directories:
+    - assets/img/
+  input_formats:
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
+    - ".tiff"
+    - ".gif"
+  output_formats:
+    webp: "-quality 85"
+
 
 # -----------------------------------------------------------------------------
 # Lazy loading images
@@ -296,6 +306,9 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
+display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
+display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+
 # -----------------------------------------------------------------------------
 # Scholar configuration (for academic citations and publications)
 # -----------------------------------------------------------------------------
@@ -307,16 +320,34 @@ scholar:
   locale: en
   source: /_bibliography/
   bibliography: papers.bib
+  bibliography_template: bib
   replace_strings: true
   join_strings: true
-  group_by: year
-  group_order: descending
+
   max_author_limit: 3
   enable_publication_thumbnails: true
   enable_publication_badges:
     altmetric: true
     dimensions: true
     google_scholar: true
+
+  bibtex_filters: [latex, smallcaps, superscript]
+
+
+  details_dir: bibliography
+  details_link: Details
+
+  query: "@*"
+  group_by: year
+  group_order: descending
+# -----------------------------------------------------------------------------
+# Jekyll Minifier
+# -----------------------------------------------------------------------------
+
+jekyll-minifier:
+  exclude: ["robots.txt", "assets/js/search/*.js"]
+  uglifier_args:
+    harmony: true
 
 # -----------------------------------------------------------------------------
 # Sitemap settings
