@@ -1,0 +1,51 @@
+technical:
+  - title: Python
+    level: Advanced
+  - title: R
+    level: Intermediate
+  - title: Machine Learning
+    level: Advanced
+  - title: Data Analysis
+    level: Expert
+  - title: Deep Learning
+    level: Advanced
+  - title: SQL
+    level: Intermediate
+  - title: TensorFlow
+    level: Advanced
+  - title: PyTorch
+    level: Advanced
+  - title: Scikit-learn
+    level: Advanced
+  - title: CSS and SCSS
+    level: Intermediate
+  - title: HTML5
+    level: Intermediate
+  - title: JavaScript
+    level: Advanced
+  - title: ReactJS
+    level: Advanced
+  - title: Web Development
+    level: Advanced
+  - title: Electrical Engineering (Communications)
+    level: Advanced
+  - title: Git & GitHub
+    level: Advanced
+
+soft:
+  - title: Writing
+    level: Intermediate
+  - title: Leadership
+    level: Intermediate
+  - title: Teaching
+    level: Advanced
+  - title: Problem Solving
+    level: Advanced
+  - title: Communication
+    level: Advanced
+  - title: Collaboration
+    level: Advanced
+  - title: Time Management
+    level: Advanced
+  - title: Teamwork
+    level: Advanced

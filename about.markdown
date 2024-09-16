@@ -12,7 +12,19 @@ I am currently pursuing my **PhD in Computational Science and Mathematical Model
 
 I have a passion for teaching and have taught across various levels, aiming to make complex concepts accessible. When I'm not coding or researching, I enjoy contributing to open-source projects, writing about technology, and helping others to grow in the data science community.
 
+## Skills
+
+### Technical Skills
+
+{% include skills/technical-skills.md %}
+
+### Soft Skills
+
+{% include skills/soft-skills.md %}
+
 ## Contact
+
+
 Feel free to connect with me on:
 - **[GitHub](https://github.com/michaelajao)**
 - **[LinkedIn](https://www.linkedin.com/in/michael-ajao)**
