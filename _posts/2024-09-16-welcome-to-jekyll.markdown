@@ -2,10 +2,10 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2024-09-16 12:45:08 +0100
-categories: blog
-tags: education, data science, machine learning, web development
-description: ""
-# highlight_home: true
+categories: blogs
+tags: education
+description: "Welcome to Jekyll! This is your first post. You can edit it or delete it, then start writing!"
+highlight_home: true
 ---
 
 Welcome to Jekyll! This is your first post. You can edit it or delete it, then start writing!
@@ -28,4 +28,6 @@ Here's a quick overview of what you can do with Jekyll:
 - [ ] Add a newsletter to your site
 
 For more information, see the [Jekyll documentation](https://jekyllrb.com/docs/).
+
+Happy Jekylling! 🎉
 
