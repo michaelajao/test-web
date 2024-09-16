@@ -10,7 +10,7 @@ body {
 
 // Links
 a {
-    color: #333333; // Dark gray accent for links
+    color: #f32525; // Dark gray accent for links
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 
@@ -19,7 +19,7 @@ a {
     }
 
     &:visited {
-        color: #666666; // Slightly lighter gray for visited links
+        color: #23bb23; // Slightly lighter gray for visited links
     }
 }
 
@@ -63,10 +63,10 @@ body {
 }
 
 // Additional Styling for Blockquote
-/* blockquote {
+blockquote {
     font-style: italic;
-    color: #555555;
-    border-left: 4px solid #000000;
+    color: #666666; // Light gray for blockquote text
+    border-left: 4px solid #e75555;
     padding-left: 10px;
     margin: 20px 0;
-} */
+}
