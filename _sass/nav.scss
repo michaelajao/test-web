@@ -1,0 +1,33 @@
+.masthead {
+    background-color: #000000; // Set to black for a sleek, minimalist header
+    color: #ffffff; // White text to contrast with the black background
+    padding: 1.5em 0; // Add some padding for better spacing
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Soft shadow for subtle depth
+}
+
+#site-nav {
+    background-color: transparent; // Keep it transparent for a clean look
+    display: flex;
+    justify-content: center; // Center the navigation items horizontally
+    padding: 0.5em 0;
+}
+
+#site-nav a,
+#site-nav a:visited {
+    color: #ffffff; // Set links to white for a high contrast against the black background
+    font-family: "Nunito Sans", sans-serif; // Use a modern sans-serif font for clarity
+    font-size: 1.1em; // Slightly larger font for readability
+    font-weight: 600; // Medium weight for balance between bold and regular
+    text-transform: uppercase; // Capitalize for a clean, futuristic feel
+    letter-spacing: 0.05em; // Add slight letter spacing for modern aesthetics
+    padding: 0.5em 1.5em; // Add padding to space out the links
+    transition: color 0.3s ease-in-out; // Smooth transition effect on hover
+}
+
+#site-nav a:hover {
+    color: #00a8db; // Subtle blue hover effect for interactivity
+}
+
+#site-nav a:visited {
+    color: #d3d3d3; // Slightly lighter color for visited links
+}

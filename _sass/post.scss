@@ -1,0 +1,30 @@
+.page__hero--overlay {
+    margin-bottom: 0;
+    background-color: #000000; // Solid black for a sleek overlay
+    color: #ffffff; // White text for high contrast
+    padding: 2em 0; // Add more vertical padding for better spacing
+}
+
+.page__hero--overlay .wrapper {
+    background-color: rgba(0, 0, 0, 0.75); // Dark semi-transparent black background for overlay
+    padding: 2em; // Increase padding for a spacious layout
+    border-radius: 10px; // Add rounded corners for a modern look
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); // Subtle shadow for depth
+}
+
+.page__hero--overlay h1 {
+    font-family: "Montserrat", sans-serif; // Clean, modern font for headers
+    font-size: 2.5em; // Large font size for the hero title
+    font-weight: 700; // Bold text for emphasis
+    color: #ffffff; // White to maintain the black-and-white contrast
+    text-align: center; // Center the title for a balanced layout
+    margin-bottom: 0.5em; // Add some space below the title
+}
+
+.page__hero--overlay p {
+    font-family: "Proza Libre", sans-serif; // Elegant, readable font for paragraphs
+    font-size: 1.2em; // Increase font size for better readability
+    line-height: 1.6; // Increase line spacing for a cleaner look
+    color: #d3d3d3; // Light gray for subtle text
+    text-align: center; // Center-align for balance
+}

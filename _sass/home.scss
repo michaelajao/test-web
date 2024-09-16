@@ -1,0 +1,12 @@
+img.avatar {
+    float: left;
+    width: 25%; // Reduced size slightly for a more balanced layout
+    margin: 0 1.5em 1.5em 0; // Adjusted margins for better spacing
+    border-radius: 50%; // Circular image for a modern and sleek look
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Soft shadow for subtle depth
+    transition: transform 0.3s ease-in-out; // Smooth transition for hover effect
+
+    &:hover {
+        transform: scale(1.05); // Slight zoom-in effect on hover
+    }
+}

@@ -1,0 +1,31 @@
+.taxonomy__section {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2em; // Adjust padding for more compact design
+}
+
+.taxonomy__section + .taxonomy__section {
+    margin-top: 0;
+}
+
+.taxonomy__section h3 {
+    margin-top: 0;
+    font-family: "Montserrat", sans-serif; // Modern font for headings
+    font-size: 1.5em; // Slightly increase font size for clarity
+    color: #ffffff; // White text for contrast with dark background
+    font-weight: 600; // Medium weight for a clean look
+}
+
+.taxonomy__index a {
+    border: none;
+    padding: 0 8px; // Slightly increase padding for a more balanced look
+    border-radius: 5px;
+    background-color: #333333; // Dark background for a minimalist, futuristic feel
+    color: #ffffff; // White text for contrast
+    font-family: "Nunito Sans", sans-serif; // Clean, modern font for links
+    transition: background-color 0.3s ease; // Smooth transition for hover effect
+}
+
+.taxonomy__index a:hover {
+    background-color: #555555; // Slight hover effect with a lighter gray background
+}

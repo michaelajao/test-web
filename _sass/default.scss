@@ -1,0 +1,61 @@
+// Global body settings
+body {
+    color: #000000; // Black text
+    background-color: #ffffff; // White background for clean look
+    font-family: 'Nunito Sans', sans-serif; // Set the global font
+    line-height: 1.6; // Improve readability with good line spacing
+    margin: 0;
+    padding: 0;
+}
+
+// Links
+a {
+    color: #333333; // Dark gray accent for links
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: #000000; // Darken on hover for a sharp contrast
+    }
+
+    &:visited {
+        color: #666666; // Slightly lighter gray for visited links
+    }
+}
+
+// Headings
+h1, h2 {
+    color: #000000; // Black text for headings
+    font-family: 'Montserrat', sans-serif; // Bold and modern font for headings
+    font-weight: 700;
+    letter-spacing: 1px; // Slightly space out for a clean look
+    margin-bottom: 20px;
+}
+
+h3, h3.archive__subtitle {
+    color: #333333; // Dark gray for smaller headings
+    font-family: 'Proza Libre', sans-serif; // Subtle and clean font for h3
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+// Paragraphs and Text
+p,
+.sidebar p,
+.archive__item-title,
+a,
+body {
+    font-family: 'Nunito Sans', sans-serif; // Consistent, modern font for body text
+    font-size: 1em;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+// Main Content Area
+#main {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto; // Center content on the page
+    padding: 40px 20px; // Padding to give content breathing space
+}

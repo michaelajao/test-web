@@ -1,0 +1,25 @@
+.page__footer {
+    margin-top: 0;
+    padding: 1.5em 0; // Add some padding for space between footer content
+    background-color: #f5f5f5; // Light gray background for a clean, neutral look
+    color: #000000; // Black text color for footer content
+    text-align: center; // Center-align the footer text for a balanced layout
+    font-family: 'Nunito Sans', sans-serif; // Modern, clean font for the footer text
+    font-size: 0.9em; // Slightly smaller font size for the footer text
+    border-top: 1px solid #e0e0e0; // Subtle border at the top of the footer for separation
+
+    a {
+        color: #000000; // Black links for consistency
+        text-decoration: none; // Remove underline for cleaner look
+        transition: color 0.3s ease-in-out; // Smooth color transition on hover
+
+        &:hover {
+            color: #666666; // Gray hover effect to add subtle interaction
+        }
+    }
+
+    p {
+        margin: 0; // Ensure no extra margins on paragraphs inside the footer
+        line-height: 1.6; // Add line height for readability
+    }
+}
