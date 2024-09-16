@@ -1,10 +1,10 @@
 ---
-layout: page
 title: Projects
-permalink: /projects/
+layout: categories_project
+author_profile: true
+author: Michael Ajao-Olarinoye
 ---
 
-# Projects
 Welcome to my portfolio! Here you'll find a collection of my data science, machine learning, and web development projects. These showcase my skills and contributions to various fields.
 
 Feel free to explore my work below!

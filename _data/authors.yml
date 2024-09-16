@@ -1,0 +1,17 @@
+Michael Ajao-Olarinoye:
+  name        : "Michael Ajao-Olarinoye"
+  bio         : "let's build something amazing together"
+  avatar      : "/assets/images/COV-CCSMM-7453.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:michael@example.com" # Update with your actual email
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/michaelajao" # Replace with your GitHub link
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/michaelajao" # Replace with your LinkedIn link
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://michaelajao.github.io" # Replace with your portfolio link

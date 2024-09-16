@@ -54,12 +54,11 @@ body {
 
 // Main Content Area
 #main {
-    position: relative;
-    // max-width: 1200px;
+    position: relative; // Relative positioning for absolute elements inside
     margin: 0 auto; // Center content on the page
-    padding: 20px 10px; // Padding to give content breathing space
-    background-color: #f9f9f9; // Very light gray for subtle contrast
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); // Subtle shadow for depth
+    padding: 0 1em; // Slightly increased padding for better spacing
+    background-color: #ffffff; // White background for clean look
+    box-shadow: 0 0 15px rgba(0.05, 0, 0, 0.05); // Subtle shadow for depth
 }
 
 // Additional Styling for Blockquote

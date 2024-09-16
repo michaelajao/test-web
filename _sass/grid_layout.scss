@@ -1,23 +1,22 @@
 .archive__item {
-    padding: 0.75em; // Maintain good spacing between items
+    padding: 0.75em; // Slightly larger padding for better spacing
     border: 1px solid #e0e0e0; // Light border for clean separation between items
-    background-color: #ffffff; // White background for simplicity and contrast
+    background-color: #ffffff; // White background for contrast
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); // Soft shadow for subtle depth
     transition: box-shadow 0.3s ease-in-out; // Smooth transition for hover effect
 
     &:hover {
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Slightly stronger shadow on hover
-        transform: translateY(-3px); // Subtle lift effect on hover for interactivity
     }
 }
 
 @media only screen and (min-width: 900px) {
     .work .grid__item .archive__item {
-        min-height: 14em; // Height adjustment for larger screens
+        min-height: 14em; // Increased height for better balance on larger screens
     }
 
     article.archive__item {
-        height: 18em; // Maintain consistent height for better visual balance
+        height: 18em; // Adjusted height for better visual hierarchy
     }
 }
 
@@ -25,44 +24,32 @@
     .archive__item-teaser img {
         height: auto !important;
         width: 100% !important;
-        position: static; // Ensure responsiveness by removing absolute positioning
+        position: static; // Removed absolute positioning for better responsiveness
     }
 }
 
 @media (min-width: 48em) {
     .grid__item .archive__item .archive__item-excerpt {
-        font-size: 0.75em; // Slightly larger font for better readability
+        font-size: 0.75em; // Slightly increased font size for readability
         color: #333333; // Dark gray text for contrast against white background
     }
 }
 
 .grid__item .archive__item-title {
-    font-size: 1em; // Maintain clear and readable title size
-    font-family: 'Nunito Sans', sans-serif; // Consistent with overall typography
-    color: #000000; // Black color for a strong, clear title
-    font-weight: 700; // Bold font for better emphasis on titles
+    font-size: 1em; // Slightly larger title for better prominence
+    font-family: 'Nunito Sans', sans-serif; // Modern font for titles
+    color: #000000; // Black color for the title to stand out
+    font-weight: 700; // Bold titles for better visual impact
 }
 
 .archive__item-teaser {
-    border: 1px solid #e0e0e0; // Keep borders consistent across items
-    height: 100px; // Set a fixed height for better layout consistency
+    border: 1px solid #e0e0e0; // Matching border style for consistency
+    height: 100px; // Slightly larger height for better spacing
 
     img {
-        width: 100%; // Ensure full-width images for better layout
-        height: auto; // Maintain aspect ratio
+        width: 100%; // Ensuring the image takes full width of the container
+        height: auto; // Maintain aspect ratio for images
         max-width: 100%; // Prevent overflow
-        object-fit: cover; // Ensure images cover the container without distortion
-        border-radius: 5px; // Add subtle rounding for a modern look
-    }
-}
-
-// Add responsive design for grid layout
-@media (max-width: 768px) {
-    .grid__item {
-        margin-bottom: 20px; // Add spacing between grid items on smaller screens
-    }
-
-    .archive__item {
-        padding: 1em; // Increase padding for better spacing on smaller devices
+        object-fit: cover; // Ensure the image covers the space properly without distortion
     }
 }
