@@ -1,7 +1,7 @@
 .taxonomy__section {
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 2em; // Adjust padding for more compact design
+    padding-top: 2em; // Keep compact, balanced padding
 }
 
 .taxonomy__section + .taxonomy__section {
@@ -10,22 +10,25 @@
 
 .taxonomy__section h3 {
     margin-top: 0;
-    font-family: "Montserrat", sans-serif; // Modern font for headings
-    font-size: 1.5em; // Slightly increase font size for clarity
-    color: #ffffff; // White text for contrast with dark background
-    font-weight: 600; // Medium weight for a clean look
+    font-family: "Montserrat", sans-serif; // Modern, bold font for headings
+    font-size: 1.6em; // Slightly larger font size for better hierarchy
+    color: #000000; // Change to black for stronger contrast with light backgrounds
+    font-weight: 600; // Medium weight to maintain a clean, minimalist look
+    letter-spacing: 0.5px; // Slight spacing for clearer readability
 }
 
 .taxonomy__index a {
     border: none;
-    padding: 0 8px; // Slightly increase padding for a more balanced look
-    border-radius: 5px;
-    background-color: #333333; // Dark background for a minimalist, futuristic feel
-    color: #ffffff; // White text for contrast
-    font-family: "Nunito Sans", sans-serif; // Clean, modern font for links
-    transition: background-color 0.3s ease; // Smooth transition for hover effect
+    padding: 0 10px; // Increase padding for improved touch targets
+    border-radius: 6px; // Slightly larger radius for a softer look
+    background-color: #000000; // Keep dark, sleek background for minimalist feel
+    color: #ffffff; // White text for strong contrast and readability
+    font-family: "Nunito Sans", sans-serif; // Maintain consistency with modern sans-serif font
+    font-weight: 500; // Slightly bolder links for emphasis
+    transition: background-color 0.3s ease, transform 0.3s ease; // Add smooth transition for hover
 }
 
 .taxonomy__index a:hover {
-    background-color: #555555; // Slight hover effect with a lighter gray background
+    background-color: #444444; // Darker gray for a more prominent hover effect
+    transform: scale(1.05); // Subtle zoom on hover to enhance interactivity
 }

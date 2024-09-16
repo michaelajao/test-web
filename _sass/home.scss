@@ -1,12 +1,20 @@
 img.avatar {
     float: left;
-    width: 25%; // Reduced size slightly for a more balanced layout
-    margin: 0 1.5em 1.5em 0; // Adjusted margins for better spacing
-    border-radius: 50%; // Circular image for a modern and sleek look
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Soft shadow for subtle depth
-    transition: transform 0.3s ease-in-out; // Smooth transition for hover effect
+    width: 25%; // Balanced size for avatar image
+    margin: 0 1.5em 1.5em 0; // Adjusted margins for proper spacing around the image
+    border-radius: 50%; // Circular image for a sleek, modern design
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Subtle shadow to give the image depth
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; // Smooth transition for both transform and shadow
 
     &:hover {
-        transform: scale(1.05); // Slight zoom-in effect on hover
+        transform: scale(1.05); // Slight zoom-in effect for interaction on hover
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); // Stronger shadow on hover for added emphasis
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    img.avatar {
+        width: 35%; // Larger size on smaller screens for better visibility
+        margin: 0 1em 1em 0; // Adjust margins for mobile view
     }
 }

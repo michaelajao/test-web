@@ -1,33 +1,49 @@
 .masthead {
-    background-color: #000000; // Set to black for a sleek, minimalist header
-    color: #ffffff; // White text to contrast with the black background
-    padding: 1.5em 0; // Add some padding for better spacing
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Soft shadow for subtle depth
+    background-color: #000000; // Black header for sleek, minimalist look
+    color: #ffffff; // White text for strong contrast
+    padding: 1.5em 0; // Balanced padding for better spacing
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for a touch of depth
+    /* position: fixed; // Fix header position at the top */
+    width: 100%; // Full width header
+    z-index: 999; // Ensure it's always on top
 }
 
 #site-nav {
-    background-color: transparent; // Keep it transparent for a clean look
+    background-color: transparent; // Transparent background for clean look
     display: flex;
-    justify-content: center; // Center the navigation items horizontally
-    /* padding: 0.5em 0; */
+    justify-content: center; // Center align navigation links
+    padding: 0.5em 0; // Add some padding for spacing
+    position: relative;
 }
 
 #site-nav a,
 #site-nav a:visited {
-    color: #ffffff; // Set links to white for a high contrast against the black background
-    font-family: "Nunito Sans", sans-serif; // Use a modern sans-serif font for clarity
-    font-size: 1.1em; // Slightly larger font for readability
-    font-weight: 600; // Medium weight for balance between bold and regular
-    text-transform: uppercase; // Capitalize for a clean, futuristic feel
-    letter-spacing: 0.05em; // Add slight letter spacing for modern aesthetics
-    padding: 0.5em 1.5em; // Add padding to space out the links
-    transition: color 0.3s ease-in-out; // Smooth transition effect on hover
+    color: #ffffff; // White links for high contrast against black background
+    font-family: "Nunito Sans", sans-serif; // Consistent modern sans-serif font
+    font-size: 1em; // Slightly larger text for readability
+    font-weight: 600; // Medium weight for balanced emphasis
+    text-transform: uppercase; // Uppercase for a modern, futuristic feel
+    letter-spacing: 0.05em; // Slight letter spacing for a clean design
+    padding: 0.5em 1.5em; // Spacing around links for better touch targets
+    transition: color 0.3s ease-in-out; // Smooth transition on hover for a polished interaction
 }
 
 #site-nav a:hover {
-    color: #00a8db; // Subtle blue hover effect for interactivity
+    color: #00a8db; // Light blue hover effect to signify interaction
 }
 
 #site-nav a:visited {
-    color: #d3d3d3; // Slightly lighter color for visited links
+    color: #d3d3d3; // Lighter color for visited links
+}
+
+// Responsive styling for smaller screens
+@media only screen and (max-width: 768px) {
+    #site-nav {
+        flex-direction: column; // Stack nav items vertically for mobile view
+    }
+
+    #site-nav a {
+        font-size: 1em; // Slightly smaller font for mobile readability
+        padding: 1em; // Increase padding for better touch interaction
+    }
 }

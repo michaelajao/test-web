@@ -1,0 +1,88 @@
+---
+layout: archive
+---
+
+<div class="home-content">
+    {{ content }}
+
+    <!-- Section for Favorite Projects -->
+    <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_projects | default: "Highlighted Projects" }}
+    </h3>
+
+    {% if paginator %}
+    {% assign posts = paginator.posts %}
+    {% else %}
+    {% assign posts = site.posts %}
+    {% endif %}
+
+    {% assign entries_layout = page.entries_layout | default: 'grid' %}
+    <div class="entries-{{ entries_layout }}">
+        {% for post in posts %}
+        {% if post.highlight_home and post.categories contains 'projects' %}
+        <div class="project-item">
+            <h4>{{ post.title }}</h4>
+            {% include archive-single.html type=entries_layout %}
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- Section for Favorite Articles/Blog Posts -->
+    <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Blog Posts" }}</h3>
+    <div class="entries-{{ entries_layout }}">
+        {% for post in posts %}
+        {% if post.highlight_home and post.categories contains 'blog' %}
+        <div class="blog-item">
+            <h4>{{ post.title }}</h4>
+            {% include archive-single.html type=entries_layout %}
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    {% include paginator.html %}
+</div>
+
+<!-- <style>
+  /* Adding minimal, futuristic design elements */
+  .home-content {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h3.archive__subtitle {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 1em;
+  }
+
+  .entries-grid, .entries-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+  }
+
+  .project-item, .blog-item {
+    border: 1px solid #333;
+    padding: 1em;
+    width: calc(33% - 2em);
+    background-color: #fff;
+  }
+
+  .project-item h4, .blog-item h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  @media screen and (max-width: 768px) {
+    .project-item, .blog-item {
+      width: calc(100% - 2em);
+    }
+  }
+</style> -->

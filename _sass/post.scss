@@ -1,30 +1,34 @@
 .page__hero--overlay {
     margin-bottom: 0;
-    background-color: #000000; // Solid black for a sleek overlay
-    color: #ffffff; // White text for high contrast
-    padding: 2em 0; // Add more vertical padding for better spacing
+    background-color: #000000; // Solid black for sleek, minimalist overlay
+    color: #ffffff; // White text for strong contrast
+    padding: 3em 0; // Increased vertical padding for better spacing
 }
 
 .page__hero--overlay .wrapper {
-    background-color: rgba(0, 0, 0, 0.75); // Dark semi-transparent black background for overlay
-    padding: 2em; // Increase padding for a spacious layout
-    border-radius: 10px; // Add rounded corners for a modern look
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); // Subtle shadow for depth
+    background-color: rgba(0, 0, 0, 0.85); // Darker semi-transparent black for stronger overlay effect
+    padding: 2.5em; // Increased padding for spacious and centered layout
+    border-radius: 12px; // Slightly more rounded corners for a modern touch
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); // Enhanced shadow for more depth
+    max-width: 1000px; // Limit width for better readability on larger screens
+    margin: 0 auto; // Center wrapper on the page
 }
 
 .page__hero--overlay h1 {
-    font-family: "Montserrat", sans-serif; // Clean, modern font for headers
-    font-size: 2.5em; // Large font size for the hero title
-    font-weight: 700; // Bold text for emphasis
-    color: #ffffff; // White to maintain the black-and-white contrast
-    text-align: center; // Center the title for a balanced layout
-    margin-bottom: 0.5em; // Add some space below the title
+    font-family: "Montserrat", sans-serif; // Bold, clean font for titles
+    font-size: 2.8em; // Slightly larger for greater emphasis on the hero title
+    font-weight: 700; // Keep bold weight for strength
+    color: #ffffff; // White for contrast against black overlay
+    text-align: center; // Keep centered for clean visual flow
+    margin-bottom: 0.75em; // More space below the title
 }
 
 .page__hero--overlay p {
-    font-family: "Proza Libre", sans-serif; // Elegant, readable font for paragraphs
-    font-size: 1.2em; // Increase font size for better readability
-    line-height: 1.6; // Increase line spacing for a cleaner look
-    color: #d3d3d3; // Light gray for subtle text
-    text-align: center; // Center-align for balance
+    font-family: "Proza Libre", sans-serif; // Elegant, modern font for body text
+    font-size: 1.25em; // Slightly larger for readability
+    line-height: 1.8; // Increase line spacing for better readability
+    color: #d3d3d3; // Subtle light gray for secondary text
+    text-align: center; // Keep centered for symmetry
+    max-width: 800px; // Restrict width for better readability
+    margin: 0 auto; // Center-align the text block
 }

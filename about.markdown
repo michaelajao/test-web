@@ -21,11 +21,3 @@ I have a passion for teaching and have taught across various levels, aiming to m
 ### Soft Skills
 
 {% include skills/soft-skills.md %}
-
-## Contact
-
-
-Feel free to connect with me on:
-- **[GitHub](https://github.com/michaelajao)**
-- **[LinkedIn](https://www.linkedin.com/in/michael-ajao)**
-- **[Twitter](https://twitter.com/michaelajao)**
