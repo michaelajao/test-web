@@ -18,6 +18,11 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem "csv"
+  gem "fiddle"
+  gem "mutex_m"
+  gem "ostruct"
+
 end
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

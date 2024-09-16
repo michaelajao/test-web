@@ -2,6 +2,9 @@
 #to make sure Jekyll reads this 
 --- 
 
+// Import remote theme styles
+
+
 @import "default";
 @import "author";
 @import "footer";
@@ -10,3 +13,5 @@
 @import "nav";
 @import "post";
 @import "taxonomy";
+
+
