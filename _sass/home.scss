@@ -1,8 +1,7 @@
 img.avatar {
     float: left;
-    width: 25%; // Balanced size for avatar image
-    margin: 0 1.5em 1.5em 0; // Adjusted margins for proper spacing around the image
-    border-radius: 50%; // Circular image for a sleek, modern design
+    width: 50%; // Balanced size for avatar image
+    margin: 0 1em 2.5em 0; // Adjusted margins for proper spacing around the image
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); // Subtle shadow to give the image depth
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; // Smooth transition for both transform and shadow
 

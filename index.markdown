@@ -7,7 +7,7 @@ author_profile: true
 author: Michael Ajao-Olarinoye
 ---
 
-![Michael Ajao-Olarinoye](/assets/images/COV-CCSMM-7453.jpg)
+![Michael Ajao-Olarinoye](/assets/images/COV-CCSMM-7453.jpg){: .avatar}
 
 # Hi, I'm Michael Ajao-Olarinoye
 
