@@ -2,28 +2,30 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2024-09-16 12:45:08 +0100
-categories: jekyll update
+categories: blog
+tags: education, data science, machine learning, web development
+description: ""
+# highlight_home: true
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+Welcome to Jekyll! This is your first post. You can edit it or delete it, then start writing!
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Here's a quick overview of what you can do with Jekyll:
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+- [x] Write posts in Markdown or HTML
+- [ ] Use Liquid tags to include content
+- [ ] Customize your site with themes, plugins, and layouts
+- [ ] Host your site for free with GitHub Pages
+- [ ] Use Jekyll with your favorite tools and services
+- [ ] Automate your site with Jekyll's API
+- [ ] Import content from your old system
+- [ ] Write your own plugins
+- [ ] Test your site with Jekyll's CI
+- [ ] Add dynamic content with Jekyll's collections
+- [ ] Add a search engine to your site
+- [ ] Add a contact form to your site
+- [ ] Add a commenting system to your site
+- [ ] Add a newsletter to your site
 
-Jekyll also offers powerful support for code snippets:
+For more information, see the [Jekyll documentation](https://jekyllrb.com/docs/).
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
