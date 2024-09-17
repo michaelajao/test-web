@@ -77,7 +77,7 @@ For a full list of my publications, please visit my [Google Scholar profile](htt
 - **JuliaCon 2022** - The Julia Language Conference, 2022. [link to conference](https://juliacon.org/2022/)
 - **JuliaCon 2023** - The Julia Language Conference, 2023. [link to conference](https://juliacon.org/2023/)
 - **CSMM 2023** - Computational Science and Mathematical Modelling Conference, 2023. [link to conference](https://www.csmm-conference.org/2023/)
-- **CSMM 2024** - Computational Science and Mathematical Modelling Conference, 2024. [link to conference](https://www.csmm-conference.org/2024/)
+- **CSMM 2024** - Computational Science and Mathematical Modelling Conference, 2024. [link to conference](https://sites.google.com/view/csmconference/)
 
 ## Scholarships and Awards
 
