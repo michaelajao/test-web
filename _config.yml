@@ -32,16 +32,45 @@ twitter_username: michaelajao
 github_username: michaelajao
 linkedin_username: michael-ajao
 
+# Site settings
+search: true
+bib_search: true
+
+
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-remote-theme
   - jekyll-paginate
+  - jekyll-jupyter-notebook
   - jekyll-sitemap
+  - jekyll-regex-replace
   - jekyll-gist
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
+# Highlighting
+# Markdown and syntax highlight
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

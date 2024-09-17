@@ -1,34 +1,133 @@
+// Post-Specific Variables (if needed)
+$box-shadow-color: rgba(0, 0, 0, 0.4); // Shadow color for depth
+
+// Hero Overlay Section
 .page__hero--overlay {
-    margin-bottom: 0;
-    background-color: #000000; // Solid black for sleek, minimalist overlay
-    color: #ffffff; // White text for strong contrast
-    padding: 3em 0; // Increased vertical padding for better spacing
+  background-color: $primary-color;
+  color: $background-color;
+  padding: 3em 0;
+
+  .wrapper {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 2.5em;
+    border-radius: 12px;
+    box-shadow: 0 0.375rem 1.25rem $box-shadow-color;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: $font-family-heading;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: $background-color;
+    text-align: center;
+    margin-bottom: 0.75em;
+  }
+
+  p {
+    font-family: $font-family-base;
+    font-size: 1.25em;
+    color: lighten($primary-color, 40%);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
-.page__hero--overlay .wrapper {
-    background-color: rgba(0, 0, 0, 0.85); // Darker semi-transparent black for stronger overlay effect
-    padding: 2.5em; // Increased padding for spacious and centered layout
-    border-radius: 12px; // Slightly more rounded corners for a modern touch
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); // Enhanced shadow for more depth
-    max-width: 1000px; // Limit width for better readability on larger screens
-    margin: 0 auto; // Center wrapper on the page
+// Code Blocks (VS Code Dark Theme Inspired)
+pre {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1.25em;
+  border-radius: 8px;
+  font-family: 'Source Code Pro', monospace;
+  overflow-x: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.page__hero--overlay h1 {
-    font-family: "Montserrat", sans-serif; // Bold, clean font for titles
-    font-size: 2.8em; // Slightly larger for greater emphasis on the hero title
-    font-weight: 700; // Keep bold weight for strength
-    color: #ffffff; // White for contrast against black overlay
-    text-align: center; // Keep centered for clean visual flow
-    margin-bottom: 0.75em; // More space below the title
+code {
+  background-color: #2d2d2d;
+  color: #e06c75;
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  font-family: 'Source Code Pro', monospace;
 }
 
-.page__hero--overlay p {
-    font-family: "Proza Libre", sans-serif; // Elegant, modern font for body text
-    font-size: 1.25em; // Slightly larger for readability
-    line-height: 1.8; // Increase line spacing for better readability
-    color: #d3d3d3; // Subtle light gray for secondary text
-    text-align: center; // Keep centered for symmetry
-    max-width: 800px; // Restrict width for better readability
-    margin: 0 auto; // Center-align the text block
+// Syntax Highlighting (Optional for Posts)
+.syntax-keyword {
+  color: #c678dd;
+}
+
+.syntax-string {
+  color: #98c379;
+}
+
+.syntax-variable {
+  color: #e06c75;
+}
+
+.syntax-function {
+  color: #61afef;
+}
+
+.syntax-comment {
+  color: #7f848e;
+}
+
+// Grid Layout for Post Entries
+.archive__item {
+  padding: 1em;
+  border: 1px solid $light-gray;
+  background-color: $background-color;
+  box-shadow: 0 0.0625rem 0.3125rem $box-shadow-color;
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &:hover {
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+  }
+}
+
+.grid__item .archive__item-title {
+  font-size: 1em;
+  font-family: $font-family-heading;
+  color: $primary-color;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.archive__item-teaser {
+  border: 1px solid $light-gray;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 0.75em;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.archive__item-excerpt {
+  font-size: 0.9em;
+  font-family: $font-family-base;
+  color: $primary-color;
+  line-height: 1.4;
+  flex-grow: 1;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }

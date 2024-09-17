@@ -1,33 +1,96 @@
+// Variables for Color Scheme
+$primary-color: #000000; // Black for primary text
+$background-color: #FFFFFF; // White background
+$text-color: $primary-color; // Black text
+$accent-color: #4df82b; // Vibrant green for accents
+$hover-color: darken($accent-color, 10%); // Darker green on hover
+$border-color: lighten($primary-color, 20%); // Light gray for subtle borders
+$font-family-base: 'Nunito Sans', sans-serif; // Base font for the footer
+
+// Footer Styling
 .page__footer {
-    margin-top: 0;
-    padding: 1em 0; // Slightly increased padding for a more spacious footer
-    background-color: #f7f7f7; // Very light gray for a softer, minimalist look
-    color: #000000; // Black text for good contrast
-    text-align: center; // Center-align footer content for balance
-    font-family: 'Nunito Sans', sans-serif; // Modern font for the footer text
-    font-size: 0.9em; // Slightly smaller text for a subtle appearance
-    border-top: 1px solid #d9d9d9; // Softer top border to blend with the background
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05); // Subtle shadow for a floating effect
+  margin-top: 0;
+  padding: 2em 0; // Adjusted padding for better spacing
+  background-color: $primary-color; // Black background for footer
+  color: $background-color; // White text for contrast
+  text-align: center; // Center-align content
+  font-family: $font-family-base; // Modern font for text
+  font-size: 0.9em; // Slightly smaller text for subtlety
+  border-top: 1px solid $border-color; // Subtle top border for separation
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+
+  // Link Styling
+  a {
+    color: $background-color; // White links for contrast
+    text-decoration: none;
+    font-weight: 600; // Slightly bolder links for emphasis
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $accent-color; // Green accent on hover
+    }
+  }
+
+  // Paragraph Styling
+  p {
+    margin: 0;
+    line-height: 1.6; // Comfortable line height for readability
+    font-size: 1em; // Adjusted font size for legibility
+  }
+}
+
+// Footer Navigation (if applicable)
+.footer-nav {
+  margin-top: 1em; // Add space above the navigation
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin: 0 1em; // Space out navigation items
 
     a {
-        color: #000000; // Consistent black for links
-        text-decoration: none; // Clean, no underline
-        transition: color 0.3s ease-in-out; // Smooth hover transition
+      color: $background-color; // White for navigation links
+      text-decoration: none;
+      font-size: 0.9em; // Slightly smaller font size
+      transition: color 0.3s ease-in-out;
 
-        &:hover {
-            color: #555555; // Slightly darker gray on hover for subtle interaction
-        }
+      &:hover {
+        color: $accent-color; // Accent color on hover
+      }
     }
+  }
+}
 
-    p {
-        margin: 0; // Remove default margins on paragraphs
-        line-height: 1.6; // Comfortable line height for readability
-        font-size: 0.95em; // Slightly larger paragraph text for better legibility
+// Footer Social Icons (if applicable)
+.footer-social-icons {
+  margin-top: 1.5em;
+  
+  a {
+    color: $background-color; // White for social media icons
+    font-size: 1.2em; // Slightly larger icon size
+    margin: 0 0.75em; // Space between icons
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $accent-color; // Accent color on hover for icons
     }
-    
-    // Add media query for responsiveness
-    @media only screen and (max-width: 768px) {
-        padding: 1.5em 0; // Adjust padding on smaller screens for a balanced layout
-        font-size: 0.85em; // Slightly smaller text for mobile devices
-    }
+  }
+}
+
+// Responsive Styling for Footer
+@media only screen and (max-width: 768px) {
+  .page__footer {
+    padding: 1.5em 0; // Adjust padding for smaller screens
+    font-size: 0.85em; // Slightly smaller text for mobile devices
+  }
+
+  .footer-nav li {
+    margin: 0 0.5em; // Reduce margin for mobile devices
+  }
+
+  .footer-social-icons a {
+    font-size: 1em; // Adjust icon size for smaller screens
+    margin: 0 0.5em; // Reduce spacing between icons on mobile
+  }
 }

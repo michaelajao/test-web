@@ -21,3 +21,13 @@ I have a passion for teaching and have taught across various levels, aiming to m
 ### Soft Skills
 
 {% include skills/soft-skills.md %}
+
+## Education
+
+- **PhD in Computational Science and Mathematical Modelling** - Coventry University, UK
+- **MSc in Data Science and computational Intelligence** - Coventry University, UK
+- **BEng in Electrical and Electronics Engineering** - kwara State University, Nigeria
+
+# Contact Me
+
+If you have any questions, suggestions, or just want to say hi, feel free to reach out to me via email at [ajaoolarinoyemichael@gmail.com](mailto:ajaolarinoyemichael@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/michael-ajao-olarinoye/).

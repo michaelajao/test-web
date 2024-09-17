@@ -37,7 +37,6 @@ GEM
     faraday-net_http (3.3.0)
       net-http
     ffi (1.17.0-x64-mingw-ucrt)
-    fiddle (1.1.2)
     filesize (0.2.0)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
@@ -82,7 +81,10 @@ GEM
       octokit (~> 4.2)
     jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
+    jekyll-jupyter-notebook (0.0.6)
+      jekyll
     jekyll-paginate (1.1.0)
+    jekyll-regex-replace (1.1.0)
     jekyll-remote-theme (0.4.3)
       addressable (~> 2.0)
       jekyll (>= 3.5, < 5.0)
@@ -162,14 +164,15 @@ PLATFORMS
 
 DEPENDENCIES
   csv
-  fiddle
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.3)
   jekyll-algolia
   jekyll-feed
   jekyll-gist
   jekyll-include-cache
+  jekyll-jupyter-notebook
   jekyll-paginate
+  jekyll-regex-replace
   jekyll-remote-theme
   jekyll-sitemap
   jemoji

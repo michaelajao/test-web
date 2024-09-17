@@ -11,7 +11,9 @@ gem "jekyll", "~> 4.3.3"
 gem "minimal-mistakes-jekyll"
 gem "jekyll-remote-theme"
 group :jekyll_plugins do
-  gem "jekyll-paginate"
+  gem 'jekyll-paginate'
+  gem 'jekyll-regex-replace'
+  gem 'jekyll-jupyter-notebook'
   gem "jekyll-sitemap"
   gem "jekyll-gist"
   gem "jekyll-feed"
@@ -19,7 +21,6 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
   gem "csv"
-  gem "fiddle"
   gem "mutex_m"
   gem "ostruct"
 

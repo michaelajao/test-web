@@ -1,11 +1,18 @@
 ---
-layout: post
+layout: posts
 title:  "Welcome to Jekyll!"
 date:   2024-09-16 12:45:08 +0100
-categories: blogs
-tags: education
+author_profile: true
+author: Michael Ajao-Olarinoye
+categories: blog
+tags: [education]
 description: "Welcome to Jekyll! This is your first post. You can edit it or delete it, then start writing!"
 highlight_home: true
+header:
+  teaser: https://plus.unsplash.com/premium_photo-1678937609110-61b091b7e1ee?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  overlay_image: https://plus.unsplash.com/premium_photo-1678937609110-61b091b7e1ee?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  overlay_filter: 0.5
+  caption: "Photo credit: [**unsplash**](https://unsplash.com)"
 ---
 
 Welcome to Jekyll! This is your first post. You can edit it or delete it, then start writing!

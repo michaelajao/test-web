@@ -1,34 +1,60 @@
+// Variables for Color Scheme
+$primary-color: #000000; // Black for primary text and backgrounds
+$background-color: #FFFFFF; // White background
+$text-color: $primary-color; // Black text
+$accent-color: #4df82b; // Vibrant green for accents
+$link-hover-color: darken($primary-color, 20%); // Darker black/gray for hover
+$font-family-base: 'Nunito Sans', sans-serif;
+$font-family-heading: 'Montserrat', sans-serif;
+
+// Taxonomy Section Styling
 .taxonomy__section {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 2em; // Keep compact, balanced padding
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 2em; // Compact padding to keep the sections balanced
 }
 
+// Spacing Between Sections
 .taxonomy__section + .taxonomy__section {
-    margin-top: 0;
+  margin-top: 0;
 }
 
+// Headings Styling
 .taxonomy__section h3 {
-    margin-top: 0;
-    font-family: "Montserrat", sans-serif; // Modern, bold font for headings
-    font-size: 1.6em; // Slightly larger font size for better hierarchy
-    color: #000000; // Change to black for stronger contrast with light backgrounds
-    font-weight: 600; // Medium weight to maintain a clean, minimalist look
-    letter-spacing: 0.5px; // Slight spacing for clearer readability
+  margin-top: 0;
+  font-family: $font-family-heading; // Use Montserrat for headings
+  font-size: 1.6em; // Larger font size for better hierarchy
+  color: $text-color; // Black for contrast against the white background
+  font-weight: 600; // Medium weight for a clean and minimal look
+  letter-spacing: 0.5px; // Add slight letter spacing for readability
 }
 
+// Links in Taxonomy Index
 .taxonomy__index a {
-    border: none;
-    padding: 0 10px; // Increase padding for improved touch targets
-    border-radius: 6px; // Slightly larger radius for a softer look
-    background-color: #000000; // Keep dark, sleek background for minimalist feel
-    color: #ffffff; // White text for strong contrast and readability
-    font-family: "Nunito Sans", sans-serif; // Maintain consistency with modern sans-serif font
-    font-weight: 500; // Slightly bolder links for emphasis
-    transition: background-color 0.3s ease, transform 0.3s ease; // Add smooth transition for hover
+  border: none;
+  padding: 0 10px; // Comfortable padding for touch targets
+  border-radius: 6px; // Rounded corners for softer link appearance
+  background-color: $primary-color; // Black background for links
+  color: $background-color; // White text for contrast and readability
+  font-family: $font-family-base; // Consistent sans-serif font
+  font-weight: 500; // Slightly bold for emphasis on links
+  transition: background-color 0.3s ease, transform 0.3s ease; // Smooth transition for hover
 }
 
+// Hover Effects on Links
 .taxonomy__index a:hover {
-    background-color: #444444; // Darker gray for a more prominent hover effect
-    transform: scale(1.05); // Subtle zoom on hover to enhance interactivity
+  background-color: $link-hover-color; // Darken background on hover
+  transform: scale(1.05); // Subtle zoom effect for interactivity
+}
+
+// Responsive Styling for Smaller Screens
+@media only screen and (max-width: 768px) {
+  .taxonomy__section h3 {
+    font-size: 1.4em; // Adjust heading size for smaller screens
+  }
+
+  .taxonomy__index a {
+    font-size: 0.9em; // Reduce link size for mobile readability
+    padding: 0 8px; // Adjust padding for better mobile experience
+  }
 }

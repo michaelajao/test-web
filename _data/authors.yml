@@ -5,13 +5,13 @@ Michael Ajao-Olarinoye:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:michael@example.com" # Update with your actual email
+      url: "mailto:miolajtech@gmail.com" # Update with your actual email
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/michaelajao" # Replace with your GitHub link
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/michaelajao" # Replace with your LinkedIn link
+      url: "https://www.linkedin.com/in/michael-ajao" # Replace with your LinkedIn link
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://michaelajao.github.io" # Replace with your portfolio link

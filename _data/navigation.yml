@@ -8,5 +8,5 @@ main:
     url: "/blog"
   - title: "About Me"
     url: "/about"
-  - title: "Contact"
-    url: "/contact"
+  # - title: "Contact"
+  #   url: "/contact"

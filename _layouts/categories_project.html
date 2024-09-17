@@ -8,7 +8,7 @@ layout: archive
 <ul class="taxonomy__index">
     {% assign sorted_tags = site.tags | sort %}
     {% for tag in sorted_tags %}
-        {% assign project_tags = tag[1] | where: "categories", "projects" | sort %}
+        {% assign project_tags = tag[1] | where: "categories", "project" | sort %}
         {% if project_tags != empty %}
             <li>
                 <a href="#{{ tag[0] | slugify }}">
@@ -22,7 +22,7 @@ layout: archive
 <!-- Projects by Category -->
 {% assign entries_layout = page.entries_layout | default: 'grid' %}
 {% for tag in sorted_tags %}
-    {% assign project_tags = tag[1] | where: "categories", "projects" | sort %}
+    {% assign project_tags = tag[1] | where: "categories", "project" | sort %}
     {% if project_tags != empty %}
         <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
             <h2 class="archive__subtitle">{{ tag[0] }}</h2>

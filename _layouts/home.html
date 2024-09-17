@@ -6,37 +6,34 @@ layout: archive
     {{ content }}
 
     <!-- Section for Favorite Projects -->
-    <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_projects | default: "Highlighted Projects" }}
-    </h3>
-
-    {% if paginator %}
-    {% assign posts = paginator.posts %}
-    {% else %}
-    {% assign posts = site.posts %}
-    {% endif %}
+    <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_projects | default: "Highlighted Projects" }}</h3>
 
     {% assign entries_layout = page.entries_layout | default: 'grid' %}
+
+    {% if paginator %}
+        {% assign posts = paginator.posts %}
+    {% else %}
+        {% assign posts = site.posts %}
+    {% endif %}
+
+    {% comment %} Filter posts for highlighted projects {% endcomment %}
+    {% assign project_posts = posts | where: "highlight_home", true | where_exp: "post", "post.categories contains 'project'" %}
+
     <div class="entries-{{ entries_layout }}">
-        {% for post in posts %}
-        {% if post.highlight_home and post.categories contains 'projects' %}
-        <div class="project-item">
-            <h4>{{ post.title }}</h4>
+        {% for post in project_posts %}
             {% include archive-single.html type=entries_layout %}
-        </div>
-        {% endif %}
         {% endfor %}
     </div>
 
     <!-- Section for Favorite Articles/Blog Posts -->
     <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Blog Posts" }}</h3>
+
+    {% comment %} Filter posts for highlighted blogs {% endcomment %}
+    {% assign blog_posts = posts | where: "highlight_home", true | where_exp: "post", "post.categories contains 'blog'" %}
+
     <div class="entries-{{ entries_layout }}">
-        {% for post in posts %}
-        {% if post.highlight_home and post.categories contains 'blogs' %}
-        <div class="blog-item">
-            <h4>{{ post.title }}</h4>
+        {% for post in blog_posts %}
             {% include archive-single.html type=entries_layout %}
-        </div>
-        {% endif %}
         {% endfor %}
     </div>
 
