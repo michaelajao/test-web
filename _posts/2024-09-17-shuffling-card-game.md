@@ -1,7 +1,7 @@
 ---
 layout: posts
 categories: project
-tags: [javascript, card game, web development]
+tags: [javascript, tutorial]
 description: "A fun and interactive shuffling card game built using JavaScript."
 highlight_home: true
 author: Michael Ajao-Olarinoye

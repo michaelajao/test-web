@@ -5,7 +5,7 @@ date:   2024-09-16 12:45:08 +0100
 author_profile: true
 author: Michael Ajao-Olarinoye
 categories: blog
-tags: [machine learning, python, education]
+tags: [machine learning, python, tutorial]
 description: "A beginner-friendly guide to using Scikit-Learn for classification tasks in Python, with code examples."
 highlight_home: true
 header:

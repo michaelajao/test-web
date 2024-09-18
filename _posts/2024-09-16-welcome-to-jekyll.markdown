@@ -5,7 +5,7 @@ date:   2024-09-16 12:45:08 +0100
 author_profile: true
 author: Michael Ajao-Olarinoye
 categories: blog
-tags: [education]
+tags: [tutorial]
 description: "Welcome to Jekyll! This is your first post. You can edit it or delete it, then start writing!"
 highlight_home: true
 header:

@@ -1,8 +1,8 @@
 ---
-title: Project posts
+title: Projects
 layout: categories_project
 author_profile: true
 author: Michael Ajao-Olarinoye
 ---
 
-This page contains a list of all my project posts. my projects are experiments, tutorials, and explorations in various fields such as data science, machine learning, web development, and more. Each project post provides an overview of the project, the technologies used, key insights, and links to the source code on GitHub.
+Welcome to my Projects page! Here, you'll find a curated collection of my hands-on work across diverse fields, including data science, machine learning, web development, and more. Each project showcases key learnings, innovative solutions, and practical applications of modern technologies. I provide insights into the methodologies used, tools and technologies involved, and link directly to the source code hosted on GitHub. Explore these projects to see how I approach problem-solving and experimentation in the tech world.

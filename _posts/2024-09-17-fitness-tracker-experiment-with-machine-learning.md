@@ -2,7 +2,7 @@
 layout: archive
 title: "Fitness Tracker Experiment with Machine Learning"
 categories: project
-tags: [machine learning, fitness tracker, data science, python]
+tags: [machine learning, data science]
 description: "An experiment using machine learning to analyze fitness tracker data."
 highlight_home: true
 header:
