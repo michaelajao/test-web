@@ -53,7 +53,7 @@ Here is a summary of the findings:
 - **Clustering Results**: Grouping users into different fitness levels based on their activity patterns.
 - **Recommendations**: Providing potential recommendations based on user fitness data.
 
-![Project Screenshot](https://images.unsplash.com/photo-1598281414204-c09a0ef59c9b?ixlib=rb-4.0.3&q=80&auto=format&fit=crop&w=1974&h=500)
+![Project Screenshot](https://plus.unsplash.com/premium_photo-1681433383783-661b519b154a?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
 
 For more details, check out the code and the full experiment on [GitHub](https://github.com/michaelajao/fitness_tracker).
 
